@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Risk Prediction - StrokeSense</title>
+    <meta name="description" content="Get your personalized stroke risk assessment with StrokeSense's AI-powered prediction tool.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/views/styles/predict.css">
+    <link rel="stylesheet" href="/components/styles/Header.css">
+    <link rel="stylesheet" href="/components/styles/PredictForm.css">
+    <link rel="stylesheet" href="/components/styles/DisplayResult.css">
+    <link rel="stylesheet" href="/components/styles/Footer.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Include Header Component -->
+    <div id="header-container"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Stroke Risk Assessment</h1>
+                <p>Fill in your information to receive a personalized risk evaluation</p>
+            </div>
+        </section>
+        
+        <!-- Include Prediction Form Component -->
+        <div id="predict-form-container"></div>
+        
+        <!-- Include Display Result Component -->
+        <div id="display-result-container"></div>
+    </main>
+    
+    <!-- Include Footer Component -->
+    <div id="footer-container"></div>
+    
+    <!-- Import the JavaScript controller -->
+    <script src="/controllers/predict.js"></script>
+</body>
+</html>

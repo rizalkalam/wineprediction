@@ -1,0 +1,219 @@
+/* DisplayResult.css */
+.result-section {
+    padding: 4rem 2rem;
+    background-color: #f9fafc;
+    display: none;
+}
+
+.result-section.active {
+    display: block;
+}
+
+.result-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.result-header h2 {
+    font-size: 1.8rem;
+    color: #722F37;
+    margin: 0;
+}
+
+.result-date {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.result-body {
+    margin-bottom: 2rem;
+}
+
+.result-indicator {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.indicator-gauge {
+    width: 200px;
+    height: 15px;
+    background-color: #edf2f7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gauge-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #722F37 0%, #A18276 50%, #D4AF37 100%);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.indicator-text {
+    flex: 1;
+}
+
+.indicator-text p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.result-info {
+    background-color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.result-info h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #722F37;
+}
+
+.result-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.result-info li {
+    color: #4a5568;
+}
+
+.result-info span {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.wine-recommendation {
+    background-color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.wine-recommendation h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #722F37;
+}
+
+.wine-recommendation p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.result-disclaimer {
+    font-size: 0.9rem;
+    color: #718096;
+    padding: 1rem;
+    border-left: 3px solid #A18276;
+    background-color: #f7fafc;
+}
+
+.result-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #722F37;
+    color: white;
+    border: 2px solid #722F37;
+}
+
+.btn-primary:hover {
+    background-color: #5A1F27;
+    border-color: #5A1F27;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #722F37;
+    border: 2px solid #722F37;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(114, 47, 55, 0.1);
+}
+
+#quality-level.low {
+    color: #EF4444;
+}
+
+#quality-level.moderate {
+    color: #F59E0B;
+}
+
+#quality-level.high {
+    color: #10B981;
+}
+
+@media (max-width: 768px) {
+    .result-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .result-date {
+        margin-top: 0.5rem;
+    }
+    
+    .result-indicator {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .indicator-gauge {
+        width: 100%;
+    }
+    
+    .result-info ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-actions {
+        flex-direction: column;
+    }
+    
+    .result-actions button {
+        width: 100%;
+    }
+}

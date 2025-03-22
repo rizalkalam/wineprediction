@@ -1,0 +1,99 @@
+/* predict.css */
+/* Base Styles */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #2b3a67;
+    --text-color: #4a5568;
+    --light-text: #a0aec0;
+    --light-bg: #f9fafc;
+    --border-color: #e2e8f0;
+    --success-color: #48bb78;
+    --warning-color: #ecc94b;
+    --danger-color: #f56565;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #3a86ff 0%, #2a75f0 100%);
+    color: white;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Loading Indicator */
+.loading-indicator {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.loading-indicator.active {
+    display: block;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+}

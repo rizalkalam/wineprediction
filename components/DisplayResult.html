@@ -1,0 +1,60 @@
+<!-- DisplayResult.html -->
+<section class="result-section" id="result-section">
+    <div class="container">
+        <div class="result-card">
+            <div class="result-header">
+                <h2>Wine Quality Result</h2>
+                <p class="result-date">Date: <span id="result-date">March 16, 2025</span></p>
+            </div>
+            
+            <div class="result-body">
+                <div class="result-indicator">
+                    <div class="indicator-gauge">
+                        <div class="gauge-fill" id="quality-gauge"></div>
+                    </div>
+                    <div class="indicator-text">
+                        <p>Quality Level: <span id="quality-level">Good</span></p>
+                        <p>Quality Score: <span id="quality-score">7</span>/10</p>
+                    </div>
+                </div>
+                
+                <div class="result-info">
+                    <h3>Key Quality Factors:</h3>
+                    <ul id="quality-factors">
+                        <li>Fixed Acidity: <span id="factor-fixed-acidity">7.0</span></li>
+                        <li>Volatile Acidity: <span id="factor-volatile-acidity">0.3</span></li>
+                        <li>pH Level: <span id="factor-ph">3.3</span></li>
+                        <li>Alcohol Content: <span id="factor-alcohol">10.5%</span></li>
+                        <li>Residual Sugar: <span id="factor-sugar">2.0 g/L</span></li>
+                        <li>Sulphates: <span id="factor-sulfates">0.6 g/L</span></li>
+                    </ul>
+                </div>
+                
+                <div class="wine-recommendation">
+                    <h3>Quality Analysis:</h3>
+                    <p id="wine-analysis">This wine exhibits a balanced profile with moderate acidity and alcohol content. The quality score indicates a well-made wine that should be enjoyable for most consumers.</p>
+                </div>
+                
+                <div class="feature-importance">
+                    <h3>Feature Importance:</h3>
+                    <div class="importance-chart" id="feature-importance-chart">
+                        <!-- Generated dynamically by JS -->
+                    </div>
+                </div>
+                
+                <div class="result-disclaimer">
+                    <p><strong>Note:</strong> This prediction is based on a machine learning model trained on chemical properties of wines. Actual taste and quality perception may vary based on individual preferences and serving conditions.</p>
+                </div>
+            </div>
+            
+            <div class="result-actions">
+                <button id="download-report" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Report
+                </button>
+                <button id="new-prediction" class="btn btn-primary">
+                    New Prediction
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

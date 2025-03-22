@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrokeSense - Stroke Risk Prediction</title>
+    <meta name="description" content="StrokeSense provides AI-powered stroke risk assessment to help with early detection and prevention.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/views/styles/index.css">
+    <link rel="stylesheet" href="/components/styles/Header.css">
+    <link rel="stylesheet" href="/components/styles/HeroSection.css">
+    <link rel="stylesheet" href="/components/styles/Footer.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Include Header Component -->
+    <div id="header-container"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Include Hero Section Component -->
+        <div id="hero-section-container"></div>
+        
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose StrokeSense?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Analysis</h3>
+                        <p>Our advanced machine learning algorithms analyze multiple risk factors to provide accurate predictions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Early Detection</h3>
+                        <p>Identifying risk factors early can lead to preventive measures and potentially life-saving interventions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Personalized Insights</h3>
+                        <p>Get detailed information about your specific risk factors and what they mean for your health.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Privacy Focused</h3>
+                        <p>Your health data remains private and secure with our advanced encryption techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Take the First Step Towards Prevention</h2>
+                    <p>Don't wait until it's too late. Early detection of stroke risk factors can save lives.</p>
+                    <a href="/views/ui/predict.html" class="btn btn-primary">Get Your Risk Assessment</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Include Footer Component -->
+    <div id="footer-container"></div>
+    
+    <!-- JavaScript to load components -->
+    <script src="/controllers/index.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 app = Flask(__name__,
-            static_folder=".", 
+            static_folder="views/styles", 
             static_url_path="views/styles",
             template_folder="views/ui")
 

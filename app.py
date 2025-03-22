@@ -5,8 +5,8 @@ import os
 import pandas as pd
 
 app = Flask(__name__,
-            static_folder="views/ui/styles", 
-            static_url_path="/static",
+            static_folder=".", 
+            static_url_path="",
             template_folder="views/ui")
 
 # Load the model

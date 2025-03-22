@@ -5,10 +5,9 @@ import os
 import pandas as pd
 
 app = Flask(__name__,
-            static_folder=os.path.join(os.path.dirname(__file__),  # Root folder project
-            static_url_path="/static",  # URL untuk akses static files
-            template_folder=os.path.join(os.path.dirname(__file__), "views/ui"))
-)
+            static_folder=".", 
+            static_url_path="",
+            template_folder="views/ui")
 
 # Load the model
 model = None

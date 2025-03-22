@@ -14,7 +14,8 @@ model = None
 
 def load_model():
     global model
-    model_path = os.path.join("models", "model.pkl")
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(BASE_DIR"models", "model.pkl")
     try:
         model = joblib.load(model_path)
         print(f"Model loaded successfully: {type(model)}")

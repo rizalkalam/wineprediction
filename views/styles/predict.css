@@ -1,9 +1,9 @@
 /* predict.css */
 /* Base Styles */
 :root {
-    --primary-color: #3a86ff;
-    --secondary-color: #2b3a67;
-    --text-color: #4a5568;
+    --primary-color: #BE3144;
+    --secondary-color: #872341;
+    --text-color: #872341;
     --light-text: #a0aec0;
     --light-bg: #f9fafc;
     --border-color: #e2e8f0;
@@ -43,9 +43,9 @@ main {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, #3a86ff 0%, #2a75f0 100%);
+    /* background: linear-gradient(135deg, #3a86ff 0%, #2a75f0 100%); */
     color: white;
-    padding: 6rem 2rem 4rem;
+    /* padding: 0.1px 0.1px 0.1px; */
     text-align: center;
 }
 
